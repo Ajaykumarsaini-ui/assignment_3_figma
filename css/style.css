@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: black;
+    --secondary-color: #FF9F0D;
+    --text-color: #FFFFFF;
+    --btn-background: #FF9F0D;
+    --btn-text: #E0DFDF;
+    --font-family: Helvetica;
+    --font-family-cursive: "Great Vibes", cursive;
+}
+
+body {
+    height: fit-content;
+    background-color: #0D0D0D;
+    width: 100%;
+    margin: auto;
+}
+
+/* header  */
+
+header {
+    background-color: #0D0D0D;
+    position: relative;
+    opacity: .9;
+    height: 106vh;
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 106vh;
+    width: 100%;
+    background-image: url("/img/hero_bg_img.png");
+    z-index: -1;
+    opacity: .2;
+    top: 0;
+    position: absolute;
+
+}
+
+
+header #hero_section .row {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+header span {
+    font-family: var(--font-family-cursive);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: var(--secondary-color);
+
+}
+
+header #hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: flex-start;
+    padding-right: 50px;
+}
+
+header h1,
+header h1 span {
+    font-family: Helvetica;
+    font-family: Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0em;
+}
+
+header p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+}
+
+header button a {
+    width: 160px;
+    padding: 12px 25px;
+    height: 60px;
+    border-radius: 30px;
+    color: var(--btn-text);
+    background-color: var(--btn-background);
+    text-decoration: none;
+
+}
+
+/*------- create best food ----------- */
+
+#create_best_food #create_best_food_left span {
+    font-family: Great Vibes;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    font-family: var(--font-family-cursive);
+    color: var(--secondary-color);
+
+}
+
+#create_best_food #create_best_food_left h1 {
+
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+
+}
+
+#create_best_food #create_best_food_left h1 span {
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    color: var(--btn-background);
+}
+
+#create_best_food #create_best_food_left p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#create_best_food #create_best_food_left button {
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: var(--btn-background);
+    color: var(--btn-text);
+
+
+}
+
+#create_best_food #create_best_food_left {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+/* #create_best_food #create_best_food_left {}
+#create_best_food #create_best_food_left {}
+#create_best_food #create_best_food_left {}
+#create_best_food #create_best_food_left {}
+#create_best_food #create_best_food_left {} */
+/* <!-- choose_food_items --> */
+#choose_food_item_span {
+    font-family: Great Vibes;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#choose_food_items_heading {
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    color: var(--text-color);
+    text-align: center;
+
+}
+
+#choose_food_items_heading span {
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    color: var(--secondary-color);
+
+}
+
+/* <!-- clients --> */
+#clients {
+    opacity: .9;
+    position: relative;
+}
+
+#clients .banner {
+    position: absolute;
+
+}
+
+#clients_content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/* <!-- food_menu --> */
+#food_menu .media h5 {
+    font-size: 18px;
+    line-height: 12px;
+
+}
+
+#food_menu .media p {
+    font-size: 10px;
+    line-height: 0px;
+}
+
+#food_menu .media span {
+    font-size: 13px;
+    line-height: 0px;
+}
+
+.media-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 4px;
+}
+
+#food_menu .media img {
+    height: 70px;
+    width: 70px;
+}
+
+/* <!-- meet our chief  --> */
+#meet_our_chef p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-family: var(--font-family-cursive);
+    line-height: 10px;
+    font-size: 15px;
+}
+
+#meet_our_chef .row img {
+    max-width: 312px;
+    max-height: 320px;
+
+}
+
+#meet_our_chef .row {
+    padding: 0;
+    margin: 0;
+}
+
+#meet_our_chef span {
+
+    color: var(--secondary-color);
+}
+
+#meet_our_chef button {
+    width: 155px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid var(--btn-background);
+
+}
+
+#chefs_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* What our client are saying */
+
+#client_saying_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 380px;
+    gap: 10px;
+}
+
+#client_saying_content p,
+#client_saying_content img,
+#client_saying_content h6,
+#client_saying_content small {
+    position: relative;
+    top: -45px;
+}
+
+#What_client_saying {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#What_client_saying #client_img {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: -20px;
+    margin: 0;
+    padding: 0;
+}
+
+#What_client_saying #quotes {
+    height: 40px;
+    width: 40px;
+}
+
+#What_client_saying #star {
+    width: 151.91px;
+    height: 23.99px;
+    margin-bottom: 10px;
+
+}
+
+#What_client_saying h6 {
+    padding-top: 10px;
+}
+
+#What_client_saying small {
+    padding-bottom: 15px;
+}
+
+#What_client_saying #dot {
+    margin-bottom: 20px;
+    position: relative;
+    top: -13px;
+}
+
+#What_client_saying #star {}
