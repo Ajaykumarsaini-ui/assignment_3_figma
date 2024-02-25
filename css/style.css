@@ -29,7 +29,6 @@ body {
 
 header {
     position: relative;
-    /* opacity: .9; */
 }
 
 header .navbar {
@@ -84,19 +83,6 @@ form .form-control {
 
 }
 
-/* #hero_icon_img {
-    position: absolute;
-    top: 100px;
-    left: 80px;
-    max-width: 25.28px;
-    max-height: 492px;
-    top: 120px;
-    left: 90px;
-
-
-}
- */
-
 header #hero_section .row {
     display: flex;
     align-items: center;
@@ -147,7 +133,7 @@ header ul {
 header h1,
 header h1 span {
     font-family: Helvetica;
-    font-size: 60px;
+    font-size: 52px;
     font-weight: 700;
     line-height: 68px;
     letter-spacing: 0em;
@@ -175,12 +161,9 @@ header button a {
 
 /* extra_ordinary_taste */
 .masonry #first_row {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 10px; */
     display: flex;
     flex-direction: row;
-
+    gap: 0px;
 }
 
 #second_row img {
@@ -189,23 +172,16 @@ header button a {
 }
 
 
-/* .masonry #second_row {
-    /* display: flex; */
-/* gap: 10px;
-    padding-top: 10px;
-    text-align:top;/
-
-} */
 
 #extra_ordinary_taste .content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 9px;
 }
 
 #extra_ordinary_taste .content span {
     font-family: Great Vibes;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
@@ -214,7 +190,7 @@ header button a {
 
 #extra_ordinary_taste .content h1 span {
     font-family: var(--font-family);
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: 0em;
@@ -222,7 +198,7 @@ header button a {
 
 #extra_ordinary_taste .content h1 {
     font-family: var(--font-family);
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: 0em;
@@ -239,11 +215,47 @@ header button a {
 
 }
 
-#extra_ordinary_taste .content img #extra_ordinary_taste_icons {
-    max-width: 374px;
-    height: 135px;
+#extra_ordinary_taste .content img {
+    max-width: 225px;
+    height: 63px;
     border-radius: 6px;
 
+}
+
+#first_row :first-child {
+    max-width: 362px;
+    max-height: 356px;
+    border-radius: 6px;
+}
+
+#first_row :last-child {
+    width: 281px;
+    height: 231px;
+    border-radius: 6px;
+}
+
+#second_row :first-child {
+    max-width: 244px;
+    max-height: 306px;
+    border-radius: 6px;
+}
+
+#second_row :last-child {
+    width: 221px;
+    height: 226px;
+    border-radius: 6px;
+}
+
+.second_row_child :first-child {
+    max-width: 161px;
+    max-height: 168px;
+    border-radius: 6px;
+}
+
+.second_row_child :last-child {
+    max-width: 161px;
+    max-height: 166px;
+    border-radius: 6px;
 }
 
 #extra_ordinary_taste_experience {
@@ -285,7 +297,7 @@ header button a {
 
 #create_best_food #create_best_food_left span {
     font-family: Great Vibes;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
@@ -297,7 +309,7 @@ header button a {
 #create_best_food #create_best_food_left h1 {
 
     font-family: var(--font-family);
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: 0em;
@@ -306,7 +318,7 @@ header button a {
 
 #create_best_food #create_best_food_left h1 span {
     font-family: var(--font-family);
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: 0em;
@@ -339,12 +351,10 @@ header button a {
     flex-direction: column;
 }
 
-/* #create_best_food #create_best_food_left {}
-#create_best_food #create_best_food_left {} */
 /* <!-- choose_food_items --> */
 #choose_food_item_span {
     font-family: Great Vibes;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
@@ -356,7 +366,7 @@ header button a {
 
 #choose_food_items_heading {
     font-family: var(--font-family);
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: 0em;
@@ -395,9 +405,6 @@ header button a {
     max-height: 123px;
 }
 
-/* #clients .container-fluid { */
-/* } */
-
 #clients .banner {
     position: absolute;
     background-position: center;
@@ -419,7 +426,26 @@ header button a {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    align-items: center;
     justify-content: center;
+}
+
+.clients_1 p {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+
+}
+
+.clients_1 span {
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+
 }
 
 /* <!-- food_menu --> */
@@ -431,7 +457,7 @@ header button a {
 
 #food_menu_para {
     font-family: Great Vibes;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
@@ -441,6 +467,21 @@ header button a {
 
 #food_menu h1 span {
     color: var(--secondary-color);
+    font-family: Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+
+}
+
+#food_menu h1 {
+
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
 
 }
 
@@ -480,6 +521,11 @@ header button a {
     padding-top: 4px;
 }
 
+.media-body span {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
 #food_menu .media img {
     height: 70px;
     width: 70px;
@@ -493,12 +539,21 @@ header button a {
     color: var(--secondary-color);
     font-family: var(--font-family-cursive);
     line-height: 10px;
-    font-size: 15px;
+    font-size: 30px;
+
 }
 
-/* #meet_our_chef .row img {
-    /* max-width: 312px; */
-/* max-height: 320px; */
+#meet_our_chef h1 {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
 #meet_our_chef_items {
     display: flex;
     align-items: center;
@@ -541,13 +596,27 @@ header button a {
     gap: 10px;
 }
 
-#What_client_saying span {
+#What_client_saying h6 {
     font-family: Great Vibes;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
     color: var(--secondary-color);
+}
+
+#What_client_saying h1 {
+    font-family: Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+}
+
+#What_client_saying_heading {
+    color: var(--secondary-color);
+    font-family: Helvetica;
+
 }
 
 #client_saying_content p,
@@ -607,7 +676,6 @@ header button a {
     top: -13px;
 }
 
-#What_client_saying #star {}
 
 /* <!-- We Document Every Food --> */
 
@@ -642,11 +710,19 @@ header button a {
     color: var(--secondary-color);
 }
 
+#document_food_content h1 {
+    font-family: Helvetica;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+}
+
 #document_food_content h6 {
     font-family: Great Vibes;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 36px;
     color: var(--secondary-color);
 }
 
@@ -678,6 +754,7 @@ header button a {
 #Blog_post_items .learn_more {
     display: flex;
     justify-content: space-between;
+    max-width: 330px;
 }
 
 #Blog_post {
@@ -695,11 +772,19 @@ header button a {
     justify-content: center;
 }
 
+.content_card {
+    border: 1px solid #FFFFFF !important;
+    border-top: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 #Blog_post h1 {
     font-family: Helvetica;
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
-    line-height: 56px;
+    line-height: 45px;
     letter-spacing: 0em;
     text-align: center;
 }
@@ -714,18 +799,48 @@ header button a {
 
 }
 
+.Blog_post_1 span {
+    color: var(--secondary-color);
+}
+
+.Blog_post_1 {
+    /* pa border: 1px solid #FFFFFF !important; */
+}
+
+.Blog_post_1 {}
+
 #Blog_post_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    align-content: center;
+    justify-items: center;
+}
+
+#Blog_post_items .main_img {
+    max-width: 350px;
+    max-height: 300px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* gap: 10px; */
+    padding-bottom: 0;
+
 }
 
 #Blog_post_items .Blog_post_1 {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+}
+
+.learn_more {
+    cursor: pointer;
+}
+
+.learn_more_img {
+    width: 76px;
+    height: 20px;
+
 }
 
 /* <!-- Need_Support --> */
@@ -780,9 +895,6 @@ header button a {
 }
 
 
-#about_us_content {
-    /* margin-top: 10px; */
-}
 
 #about_us_content_img .media img {
     width: 55px;
@@ -836,6 +948,10 @@ footer {
     color: var(--text-color);
 }
 
+footer img {
+    cursor: pointer;
+}
+
 
 @media screen and (max-width:992px) {
 
@@ -864,6 +980,12 @@ footer {
         max-width: 100px;
         max-height: 100px;
     }
+
+    #food_menu .container ul {
+        gap: 40px;
+
+    }
+
 
 
 }
@@ -897,6 +1019,7 @@ footer {
     #clients_content .clients_1 p,
     #clients_content .clients_1 span {
         font-size: 10px;
+        line-height: 15px;
     }
 
     footer .row {
@@ -937,6 +1060,25 @@ footer {
     header .navbar {
         height: 75px;
     }
+
+    #food_menu .container ul {
+        gap: 10px;
+        font-size: 13px;
+
+    }
+
+    #Blog_post_items {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    #Blog_post_items .main_img {
+        max-width: 576px;
+        max-height: auto;
+
+    }
+
 
 
 
