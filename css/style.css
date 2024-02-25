@@ -612,7 +612,7 @@ header button a {
 /* <!-- We Document Every Food --> */
 
 #document_food {
-    background-image: url('/img/section_8_bg_img.png');
+    background-image: url('img/section_8_bg_img.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
