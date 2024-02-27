@@ -126,7 +126,45 @@ header ul {
 
 #hero_icon_img {
     max-width: 25.28px;
-    max-height: 450px;
+    max-height: 107px;
+    position: relative;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+#hero_icon_img i {
+    color: var(--text-color);
+}
+
+#hero_icon_img i:hover {
+    color: var(--secondary-color);
+}
+
+#hero_icon_img::before {
+    content: '';
+    height: 150px;
+    width: 2px;
+    background-color: var(--text-color) !important;
+    position: absolute;
+    top: -170px;
+    left: 6px;
+    /* z-index: 99999999; */
+
+
+}
+
+#hero_icon_img::after {
+    content: '';
+    height: 150px;
+    width: 2px;
+    background-color: var(--text-color) !important;
+    position: absolute;
+    top: 100px;
+    left: 6px;
+
 
 }
 
@@ -148,14 +186,21 @@ header p {
 
 }
 
+header button {}
+
 header button a {
-    width: 160px;
-    padding: 12px 25px;
-    height: 60px;
+    padding: 15px 35px;
+    width: 155px;
+    height: 50px;
     border-radius: 30px;
     color: var(--btn-text);
-    background-color: var(--btn-background);
     text-decoration: none;
+    border: 1px solid var(--secondary-color);
+
+}
+
+header button a:hover {
+    background-color: var(--btn-background);
 
 }
 
@@ -163,12 +208,12 @@ header button a {
 .masonry #first_row {
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    margin: 0;
 }
 
 #second_row img {
     display: flex;
-    max-width: 40%;
+    max-width: 60%;
 }
 
 
@@ -336,12 +381,17 @@ header button a {
 }
 
 #create_best_food #create_best_food_left button {
-    width: 150px;
-    height: 40px;
+    width: 155px;
+    height: 50px;
     border-radius: 30px;
-    background-color: var(--btn-background);
     color: var(--btn-text);
+    border: 1px solid var(--secondary-color);
 
+
+}
+
+#create_best_food #create_best_food_left button:hover {
+    background-color: var(--btn-background);
 
 }
 
@@ -455,6 +505,16 @@ header button a {
 
 }
 
+#meet_our_chef button:hover {
+    background-color: var(--secondary-color);
+}
+
+#document_food_content button:hover {
+    background-color: var(--secondary-color);
+
+}
+
+
 #food_menu_para {
     font-family: Great Vibes;
     font-size: 30px;
@@ -485,13 +545,10 @@ header button a {
 
 }
 
-#food_menu .container ul {
-    position: relative;
-    /* text-align: center; */
-    justify-content: space-between;
+#food_menu ul {
+    justify-content: space-around;
     display: flex;
-    flex-direction: row;
-    gap: 60px;
+    border: none;
 
 }
 
@@ -594,6 +651,43 @@ header button a {
     justify-content: center;
     width: 100%;
     gap: 10px;
+}
+
+.carousel-indicators button {
+    background-color: orange !important;
+    margin: 0 3px;
+    color: var(--secondary-color) !important;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+}
+
+#What_client_saying {
+    width: auto;
+    /* min-height: 580px; */
+}
+
+.carousel-item .dummy {
+    max-height: 580px;
+    /* max-width: 400px; */
+}
+
+#carouselExampleDark {
+    /* max-height: 200px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#carouselExampleDark .card {
+    border: none;
+}
+
+.carousel-caption {
+    position: absolute;
+    /* z-index: -1; */
+    left: -300px;
+    top: -50px;
 }
 
 #What_client_saying h6 {
@@ -948,8 +1042,32 @@ footer {
     color: var(--text-color);
 }
 
-footer img {
-    cursor: pointer;
+footer a {
+    width: 36px;
+    height: 30px;
+    background-color: var(--text-color);
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer i:hover {
+    color: var(--secondary-color);
+}
+
+footer a i {
+    font-size: 20px;
+    color: #4F4F4F;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_content_a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -998,7 +1116,8 @@ footer img {
 
     .second_row_child {
         display: flex;
-        gap: 20px;
+        gap: 40px;
+        flex-direction: column;
     }
 
     #clients_content {
@@ -1035,6 +1154,11 @@ footer img {
 
     #about_us_content_img {
         padding-left: 44px;
+    }
+
+    #about_us_content_img {
+        color: var(--secondary-color);
+        font-size: 10px;
     }
 
 
@@ -1086,3 +1210,9 @@ footer img {
     #clients_content .clients_1 p,
     #clients_content .clients_1 span {}
 }
+
+/* .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
